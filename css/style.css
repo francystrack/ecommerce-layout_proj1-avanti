@@ -14,27 +14,115 @@
 	margin: 0;
 	padding: 0;
 	font-family: nunito, sans-serif;
+	background-color: #fff;
 }
 
 a {
 	text-decoration: none;
 }
 
-/* menu de navegação */
+
+/* header & navigation */
 
 header {
 	position: sticky;
 	top: 0;
 }
 
+.cupomDesconto {
+	display: block;
+	color: #fff;
+	background-color: #1c8adb;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+.cupomDesconto span {
+	background-color: blueviolet;
+}
+
+.headerContainer {
+	display: flex;
+	flex-flow: row wrap;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.headerContainer img {
+	height: 30px;
+	width: auto;
+}
+
+.headerContainer span {
+	margin: 5px 50px;
+}
+
+.userName {
+	display: flex;
+	padding: 0 10px;
+}
+
+.userName p {
+	padding-left: 10px;
+	padding-right: 30px;
+	font-size: 0.9em;
+}
+
+#formSearch {
+	display: flex;
+}
+
+#search {
+	width: 400px;
+	height: 26px;
+	border: 2px solid #dedede;
+	border-radius: 30px;
+}
+
+#search:hover {
+	background-color: rgba(28, 138, 219, 0.2);
+	border-radius: 30px;
+	box-shadow: 0 0 3px blueviolet;
+	transition-duration: 8ms;
+}
+
+#searchButton {
+	border: none;
+	margin-left: 5px;
+}
+
+#searchButton img:hover {	
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 0 3px blueviolet;
+}
+
+#cart {
+	border: none;
+}
+
+#cart img:hover {
+	cursor: pointer;
+	border-radius: 30px;;
+	box-shadow: 0 0 3px blueviolet;
+}
+
+
 nav ul {
-	background-color: #fff;
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: center;
 	width: 100%;
+	height: auto;
 }
 
 nav li {
-	display: inline-block;
-	vertical-align: middle;
+	display: block;
+	font-size: 0.95em;
 }
 
 nav a {
@@ -42,7 +130,7 @@ nav a {
 	color: #222;
 	text-align: center;
 	padding: 10px 10px;
-	transition-duration: 0.4s;	
+	transition-duration: 0.4s;
 }
 
 nav a:hover {
