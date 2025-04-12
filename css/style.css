@@ -111,6 +111,14 @@ header {
 	box-shadow: 0 0 3px blueviolet;
 }
 
+#searchResult {
+	display: none;
+	text-align: center;
+	background-color: #1c8adb;
+	color: #fff;
+	padding: 50px 0;
+}
+
 
 nav ul {
 	display: flex;
@@ -136,4 +144,45 @@ nav a {
 nav a:hover {
 	color: #1c8adb;
 	font-weight: bold;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+  
+.dropdownContent {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdownContent a {
+	color: black;
+	background-color: #f5f5f5;
+	font-size: 0.9em;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdownContent a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdownContent {display: block;}
+
+.dropdownDP {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdownDP:hover .dropdownContentDP {display: block;}
+
+
+
+.hero img {
+	width: 100%;
+	height: auto;
 }

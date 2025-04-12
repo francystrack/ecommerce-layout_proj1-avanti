@@ -23,13 +23,13 @@
 					<form id="formSearch">
 						<input type="text" name="search" id="search" placeholder=" Digite aqui o que você procura">
 						<button type="button" id="searchButton">
-							<img class="formImg" src="images/header/search.png" alt="Lupa de pesquisa"/>
+							<img class="formImg" src="images/header/search.png" alt="Botão de busca"/>
 						</button>
 					</form>
 				</span>
 				<span class="userName">
 					<a href="#">
-						<img src="images/header/user.png" alt="Usuário" id="userIcon" />
+						<img src="images/header/user.png" alt="Usuário" />
 					</a>
 					<p>Olá,<br />Nome do Cliente</p>
 					<button type="button" id="cart">
@@ -42,8 +42,18 @@
 
 			<nav>
 				<ul>
-					<li>
+					<li class="dropdown">
 						<a href="#">Todas as categorias</a>
+						<div class="dropdownContent">
+							<a href="#" class="drpDP">Departamento</a>
+							<a href="#" class="drpDP">Departamento</a>
+							<a href="#" class="drpDP">Departamento</a>
+							<a href="#" class="drpDP">Departamento</a>
+							<a href="#" class="drpDP">Departamento</a>
+							<a href="#" class="drpDP">Departamento</a>
+							<a href="#" class="drpDP">Departamento</a>
+							<a href="#" class="drpDP">Departamento</a>			
+						</div>
 					</li>
 					<li>
 						<a href="#">Departamento</a>
@@ -74,12 +84,25 @@
         </header>
 
         <main>
-            conteúdo<br>
-            <strong>LOREM IPSUM</strong>
-        </main>
+			<section>
+				<div id="searchResult"></div>
+			</section>
+
+			<section class="hero">
+				<div>
+					<img src="images/hero.png" alt="Imagem de destaque do site" />
+				</div>
+			</section>
+
+		    </main>
 
         <footer>
             rodapé
         </footer>
+
+
+<!-- scripts -->
+		<script src="js/search.js"></script>
+
     </body>
 </html>
