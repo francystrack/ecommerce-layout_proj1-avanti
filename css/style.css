@@ -21,6 +21,21 @@ a {
 	text-decoration: none;
 }
 
+h3 {
+	font-size: 0.95em;
+	font-weight: normal;
+	color: #222;
+	margin: 6px 0;
+}
+
+h2 {
+	font-size: 1.1em;
+	color: #222;
+	box-sizing: content-box;
+}
+
+
+
 
 /* header & navigation */
 
@@ -119,7 +134,6 @@ header {
 	padding: 50px 0;
 }
 
-
 nav ul {
 	display: flex;
 	flex-flow: row wrap;
@@ -145,6 +159,9 @@ nav a:hover {
 	color: #1c8adb;
 	font-weight: bold;
 }
+
+
+
 
 .dropdown {
 	position: relative;
@@ -182,7 +199,106 @@ nav a:hover {
 
 
 
+
+
 .hero img {
 	width: 100%;
 	height: auto;
+}
+
+
+
+/* new products */
+
+
+.release {
+	display: flex;
+	flex-flow: row-wrap;
+	justify-content: space-between;
+	margin-inline: 10%;
+	margin-top: 80px;
+}
+
+.productContainer {
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: space-evenly;
+    padding-bottom: 50px;
+	margin-inline: 10%;
+}
+
+article {
+    color: #222;
+    font-size: 1em;
+    height: auto;
+    width: 180px;
+	text-align: left;
+    margin: 20px;
+	padding: 10px;
+	box-shadow: 0 0 1px #222;
+}
+
+article:hover {
+	box-shadow: 0 0 3px blueviolet;
+	transition-duration: 0.4s;
+}
+
+article img {
+    width: 180px;
+    height: 225px;
+    margin: 10px auto 0;
+}
+
+article img:hover {
+	transform: scale(1.5);
+}
+
+.newProduct {
+	position: relative;
+	font-size: 0.75em;
+	background-color: #12588b;
+	color: #fff;
+	text-transform: uppercase;
+	border: 5px solid #12588b;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.price {
+    margin-bottom: 6px;
+    font-weight: bold;
+	font: 1.05em;
+}
+
+.priceInfo {
+	font-size: 0.85em;
+	text-decoration: line-through;
+}
+
+.paymentInfo {
+	font-size: 0.85em;
+	margin-bottom: 10px;
+}
+
+article button {
+    margin-top: 5px;
+	background-color: #1c8adb;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	width: 180px;
+	height: 40px;
+    border: 1px solid #1c8adb;
+	border-radius: 5px;
+	box-shadow: 0 0 1px #1c8adb;
+}
+
+article button:hover {
+	background-color: #12588b;
+	box-shadow: 0 0 3px blueviolet;
+}
+
+
+.content1 {
+	
 }
