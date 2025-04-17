@@ -13,6 +13,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	font-family: nunito, sans-serif;
 }
 
@@ -29,7 +30,6 @@ h1 {
 h2 {
 	font-size: 1.1em;
 	color: #222;
-	box-sizing: content-box;
 }
 
 h3 {
@@ -89,7 +89,7 @@ header {
 	height: auto;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
+	padding-top: 15px;
 }
 
 .headerContainer img {
@@ -177,7 +177,7 @@ nav a {
 	display: block;
 	color: #222;
 	text-align: center;
-	padding: 10px 10px;
+	padding: 10px;
 	transition-duration: 0.4s;
 }
 
@@ -244,9 +244,10 @@ nav a:hover {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	margin-inline: 10%;
 	margin-top: 80px;
 	margin-bottom: 10px;
+	margin-inline: 12%;
+	padding-inline: 10px;
 }
 
 .release a {
@@ -258,6 +259,26 @@ nav a:hover {
 	color: #1c8adb;
 	text-decoration: underline;
 }
+
+.swiper {
+	width: 75%;
+	height: auto;
+	z-index: 0;
+	position: relative;
+}
+
+.swiper-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-slide {
+	width: 200px;
+}
+
 
 .productContainer {
     display: flex;
@@ -271,10 +292,11 @@ article {
     color: #222;
     font-size: 1em;
     height: auto;
-    width: 180px;
+    width: 200px;
 	text-align: left;
     margin: 10px;
 	padding: 10px;
+	border-radius: 10px;
 	box-shadow: 0 0 1px #222;
 	position: relative;
 }
@@ -299,13 +321,14 @@ article:hover {
 }
 
 article img {
-    width: 180px;
-    height: 225px;
-    margin: 10px auto 0;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+	padding: 0;
 }
 
 article img:hover {
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 
 .imgProduct {
@@ -347,7 +370,7 @@ article button {
 	font-size: 1em;
 	font-weight: bold;
 	color: #fff;
-	width: 180px;
+	width: 100%;
 	height: 40px;
     border: 1px solid #1c8adb;
 	border-radius: 5px;
@@ -360,8 +383,26 @@ article button:hover {
 }
 
 
+.swiper-button-next, .swiper-button-prev {
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 40%;
+	border: #1c8adb 2px solid;
+	box-shadow: 0 0 3px blueviolet;
+}
 
+.swiper-button-next:hover, .swiper-button-prev:hover {
+	color: #fff;
+	background-color: #1c8adb;
+	box-shadow: 0 0 3px blueviolet;
+	transition-duration: 0.4s;
+}
 
+.swiper-pagination {
+	position: relative;
+	margin-top: 15px;
+}
 
 
 .textContent {
@@ -415,6 +456,7 @@ article button:hover {
 	position: relative;
 	display: flex;
 	align-items: center;
+	margin-top: 60px;
 }
 
 .featured2 p {
@@ -504,6 +546,11 @@ article button:hover {
 	cursor: pointer;
 }
 
+
+
+/* footer */
+
+
 .aboutSection {
 	display: flex;
 	flex-flow: row wrap;
@@ -574,7 +621,7 @@ article button:hover {
 	margin: 25px 10px 0;
 }
 
-footer {
+.footerInfo {
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
