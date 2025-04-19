@@ -160,12 +160,19 @@ header {
 	padding: 50px 0;
 }
 
+
+
+
+
+
 nav ul {
 	display: flex;
 	flex-flow: row wrap;
-    justify-content: center;
-	width: 100%;
+	justify-content: center;
+	margin: 0 auto;
+	width: 75%;
 	height: auto;
+	position: relative;
 }
 
 nav li {
@@ -178,54 +185,205 @@ nav a {
 	color: #222;
 	text-align: center;
 	padding: 10px;
-	transition-duration: 0.4s;
+	transition-duration: 0.3s;
 }
 
 nav a:hover {
 	color: #1c8adb;
 	font-weight: bold;
 }
-
-
-
-
-
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
   
 .dropdownContent {
 	display: none;
 	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: auto;
 	background-color: #fff;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownContentDP {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.dropdownColumns {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+.drpLinks {
+	flex: 1;
+}
+
+.categoryContainer {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+	margin: 15px 15px 0 0;
+	visibility: hidden;
+}
+
+.categoryList {
+	flex-flow: column;
+}
+
+.categoryList li {
+	margin-bottom: 8px;
+}
+
+.categoryTitle {
+	font-weight: bold;
+	color: #1c8adb;
+	padding-bottom: 8px;
+}
+
+.drpDP, .drpDP1 {
+	display: inherit;
+	flex-flow: row;
+	justify-content: space-evenly;
+	color: black;
+	background-color: #f5f5f5;
+	font-size: 0.95em;
+	text-decoration: none;
+	width: 200px;
+	transition-duration: 0.3s;
+}
+
+.drpLinks a {
+	padding: 12px 16px;
+}
+
+.drpLinks span {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.drpDP:hover, .drpDP1:hover {
+	background-color: #ddd;
+}
+
+.dropdownImg {
+	align-items: center;
+	position: relative;
+}
+
+.bg {
+	position: absolute;
+	background-color: #222;
+	top: 0;
+	width: 240px;
+	height: 80%;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+.dropdownImg img {
+	position: relative;
+	width: 240px;
+	height: 80%;
+	margin: 20px;
+	border-radius: 10px;
+	mask-image: linear-gradient(to right, black 40%, transparent);
+	flex: 1;
+}
+
+.imgText {
+	display: flex;
+	flex-flow: column;
+	position: absolute;
+	top: 60px;
+	left: 50px;
 	z-index: 1;
 }
 
-.dropdownContent a {
-	color: black;
-	background-color: #f5f5f5;
-	font-size: 0.9em;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
+.imgText p {
+	text-align: left;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	color: #fff;
+	text-shadow: 2px 2px 5px #222;
+	margin-bottom: 20px;
 }
 
-.dropdownContent a:hover {background-color: #ddd;}
+.dropdownImg button {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: rgba(0,0,0,0.1);
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+.dropdownImg button:hover {
+	color: #222;
+	background-color: rgba(255, 255, 255,0.7);
+	box-shadow: 0 0 5px rgba(22,22,22,0.8);;
+	border: 1px solid rgba(22,22,22,1);
+	transition-duration: 0.5s;
+}
+
+/* evita o padding setado no a lá de cima */
+.dropdownImg a {
+	padding: 0;
+}
+
+
+.drpDP:hover .categoryContainer {visibility: visible;}
+
 
 .dropdown:hover .dropdownContent {display: block;}
 
-.dropdownDP {
-	position: relative;
-	display: inline-block;
+
+
+.departmentContainer {
+	display: flex;
+	flex-flow: column;
+	justify-content: start;
+	margin-top: 20px;;
+	margin-left: 30px;
+	width: 60%;
 }
 
-.dropdownDP:hover .dropdownContentDP {display: block;}
+.departmentContainer p {
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+
+.bg2 {
+	position: absolute;
+	background-color: #222;
+	top: 0;
+	width: 240px;
+	height: 87%;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+.categoryContainerDP {
+	display: flex;
+	flex-flow: row;
+	justify-self: space-between;
+}
 
 
 
+.dropdown:hover .dropdownContentDP {display: block;}
 
 
 .featured img {
@@ -233,7 +391,15 @@ nav a:hover {
 	height: auto;
 }
 
-
+.b2 {
+	position: absolute;
+	background-color: #222;
+	top: 0;
+	width: 240px;
+	height: 87%;
+	margin: 20px;
+	border-radius: 10px;
+}
 
 
 
@@ -317,7 +483,7 @@ article {
 
 article:hover {
 	box-shadow: 0 0 3px blueviolet;
-	transition-duration: 0.4s;
+	transition-duration: 0.3s;
 }
 
 article img {
@@ -396,7 +562,7 @@ article button:hover {
 	color: #fff;
 	background-color: #1c8adb;
 	box-shadow: 0 0 3px blueviolet;
-	transition-duration: 0.4s;
+	transition-duration: 0.3s;
 }
 
 .swiper-pagination {

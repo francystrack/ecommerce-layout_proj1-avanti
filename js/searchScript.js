@@ -12,12 +12,12 @@ function showSearchResults() {
 }
 
 searchButton.addEventListener("click", (e) => {
-    showSearchResults()}
-);
+    showSearchResults();
+});
 
 inputForm.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
-        showSearchResults()
+        showSearchResults();
         e.preventDefault();
     }
-})
+});
