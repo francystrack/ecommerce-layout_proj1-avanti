@@ -148,19 +148,30 @@ nav li {
 	font-size: 0.95em;
 }
 
+.main-link {
+	font-weight: bold;
+}
+
+.main-link:hover {
+	letter-spacing: normal;
+	color: #1c8adb;
+}
+
 nav a {
 	display: block;
 	color: #222;
 	text-align: center;
 	padding: 10px;
+	transition-property: color;
 	transition-duration: 0.3s;
 }
 
 nav a:hover {
 	color: #1c8adb;
 	font-weight: bold;
+	letter-spacing: -0.4px;
 }
-  
+
 .dropdown-content, .dropdown-content-dp {
 	display: none;
 	position: absolute;
@@ -193,11 +204,14 @@ nav a:hover {
 }
 
 .drp-links span {
-	padding: 10px;
+	padding: 13px 0 0 10px;
 	cursor: default;
 }
 
-.drp-links span:hover {color: #1c8adb}
+.drp-links img {
+	width: 15px;
+	height: auto;
+}
 
 .drp-dp, .drp-dp-1 {
 	display: inherit;
