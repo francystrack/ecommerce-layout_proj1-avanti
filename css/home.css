@@ -351,3 +351,40 @@ h1 {
         height: 60px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .featured img {
+		min-height: 150px;
+        object-fit: cover;
+	}
+
+    .text-content {
+        margin-inline: 10%;
+        flex-flow: column;
+        row-gap: 30px;
+    }
+
+    .text-content img {
+        width: 350px;
+    }
+
+    h1 {
+        font-size: 1.7em;
+        margin-bottom: 10px;
+    }
+
+    .text-1 {
+        margin-left: 0;
+    }
+
+    .block img {
+        width: 70px;
+        height: 70px;
+        float: left;
+    }
+
+    .featured-2 p {
+        font-size: 1.1em;
+    }
+}
