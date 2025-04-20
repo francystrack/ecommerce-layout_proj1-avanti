@@ -448,3 +448,22 @@ h5 {
 	height: auto;
 	margin: 0 15px;
 }
+
+
+@media (max-width: 1100px) {
+	
+	.header-container {
+		width: 80%;
+		justify-content: center;
+		row-gap: 10px;
+		column-gap: 60px;
+	}
+
+	#search {
+		width: 300px;
+	}
+
+	nav ul {
+		width: 90%;
+	}
+}
