@@ -1,5 +1,5 @@
-const categoryContainer = document.querySelector(".categoryContainer");
-const drpDP1 = document.querySelector(".drpDP1");
+const categoryContainer = document.querySelector(".category-container");
+const drpDP1 = document.querySelector(".drp-dp-1");
 
 drpDP1.addEventListener("mouseover", (e) => {
     categoryContainer.style.visibility = "visible";

@@ -6,94 +6,91 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="icon" href="favicon/favicon.png" type="image/x-icon">
+        <link rel="icon" href="favicon/favicon.png" type="image/x-icon" />
 
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
-
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="css/home.css" rel="stylesheet" type="text/css" />
     </head>
+
     <body>
+
+		<!-- HEADER -->
 		<header>
-			<p class="cupomDesconto">
+			<p class="cupom-desconto">
 				Ganhe <span>R$10</span> no seu primeiro pedido! Utilize o cupom <span>DESCONTO10</span>
 			</p>
-			<div class="headerContainer">
+			<div class="header-container">
 				<span>
 					<img src="images/header/avantiBlue.png" alt="Logo da Avanti em azul" />
 				</span>
 				<span>
-					<form id="formSearch">
+					<form id="form-search">
 						<input type="text" name="search" id="search" aria-label="Barra de pesquisa" placeholder="Digite aqui o que você procura">
-						<button type="button" id="searchButton">
+						<button type="button" id="search-button">
 							<img class="formImg" src="images/header/search.png" alt="Botão de busca"/>
 						</button>
 					</form>
 				</span>
-				<span class="userName">
+				<span class="user-name">
 					<a href="#">
 						<img src="images/header/user.png" alt="Usuário" />
 					</a>
 					<p>Olá,<br />Nome do Cliente</p>
-					<button type="button" id="cartButton">
-						<span class="cartCount">0</span>
+					<button type="button" id="cart-button">
+						<span class="cart-count">0</span>
 						<a href="#">
 							<img src="images/header/cart.png" alt="Carrinho de compras" />
 						</a>
 					</button>
-
-					
-						
-											
-					</div>
 				</span>
 			</div>
+
+			<!-- navigation -->
 			<nav>
 				<ul>
 					<li class="dropdown">
 						<a href="#"><strong>☰ Todas as categorias</strong></a>
-						<div class="dropdownContent">
-							<div class="dropdownContainer">
-								<div class="dropdownColumns">
-									<ul class="drpLinks">
-										<li class="drpDP1">
+						<div class="dropdown-content">
+							<div class="dropdown-container">
+								<div class="dropdown-columns">
+									<ul class="drp-links">
+										<li class="drp-dp-1">
 											<a href="#">Departamento</a>
 											<span>&#x2B9E;</span>
 										</li>
-										<li class="drpDP">
+										<li class="drp-dp">
 											<a href="#">Departamento</a>
 											<span>&#x2B9E;</span>
-										</li class="drpDP">
-										<li class="drpDP">
-											<a href="#">Departamento</a>
-											<span>&#x2B9E;</span>
-										</li>
-										<li class="drpDP">
+										</li class="drp-dp">
+										<li class="drp-dp">
 											<a href="#">Departamento</a>
 											<span>&#x2B9E;</span>
 										</li>
-										<li class="drpDP">
+										<li class="drp-dp">
 											<a href="#">Departamento</a>
 											<span>&#x2B9E;</span>
 										</li>
-										<li class="drpDP">
+										<li class="drp-dp">
 											<a href="#">Departamento</a>
 											<span>&#x2B9E;</span>
 										</li>
-										<li class="drpDP">
+										<li class="drp-dp">
 											<a href="#">Departamento</a>
 											<span>&#x2B9E;</span>
 										</li>
-										<li class="drpDP">
+										<li class="drp-dp">
+											<a href="#">Departamento</a>
+											<span>&#x2B9E;</span>
+										</li>
+										<li class="drp-dp">
 											<a href="#">Departamento</a>
 											<span>&#x2B9E;</span>
 										</li>
 									</ul>
-									<ul class="categoryContainer">
-										<div class="categoryList">
-											<li class="categoryTitle">Categoria X</li>
+									<ul class="category-container">
+										<div class="category-list">
+											<li class="category-title">Categoria X</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -103,8 +100,8 @@
 											<li>Categoria</li>
 										</div>
 
-										<div class="categoryList">
-											<li class="categoryTitle">Categoria Y</li>
+										<div class="category-list">
+											<li class="category-title">Categoria Y</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -114,8 +111,8 @@
 											<li>Categoria</li>
 										</div>
 										
-										<div class="categoryList">
-											<li class="categoryTitle">Categoria Z</li>
+										<div class="category-list">
+											<li class="category-title">Categoria Z</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -127,8 +124,8 @@
 									</ul>
 								</div>
 								<ul>
-									<li class="dropdownImg">
-										<div class="imgText">
+									<li class="dropdown-img">
+										<div class="img-text">
 											<p>
 												Confira os<br />Produtos<br />
 												<strong>Que<br />Acabaram<br />de chegar</strong>
@@ -145,15 +142,15 @@
 
 					<li class="dropdown">
 						<a href="#">Departamento</a>
-						<div class="dropdownContentDP">
-							<div class="dropdownContainer">
-								<div class="departmentContainer">
-									<div>
-										<p><strong>Departamento</strong></p>
-									</div>
-									<div class="categoryContainerDP">
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+						<div class="dropdown-content-dp">
+							<div class="dropdown-container">
+								<div class="department-container">
+									<p>
+										<strong>Departamento</strong>
+									</p>
+									<div class="category-container-dp">
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -162,8 +159,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -172,8 +169,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -185,15 +182,15 @@
 									</div>
 								</div>
 								<div>
-									<ul class="dropdownImg">
-										<div class="imgText imgText2">
+									<ul class="dropdown-img">
+										<div class="img-text img-text-2">
 											<p>
 												Confira os<br />Produtos<br />
 												<strong>Que<br />Acabaram<br />de chegar</strong>
 											</p>
 											<a href="#"><button>Ver todos</button></a>
 										</div>
-										<div class="bg2"></div>
+										<div class="bg-2"></div>
 										<img src="images/caneca2.png" alt="Caneca preta personalizada com o logo da Avanti em uma cozinha" />
 									</ul>
 								</div>				
@@ -202,15 +199,15 @@
 					</li>
 					<li class="dropdown">
 						<a href="#">Departamento</a>
-						<div class="dropdownContentDP">
-							<div class="dropdownContainer">
-								<div class="departmentContainer">
+						<div class="dropdown-content-dp">
+							<div class="dropdown-container">
+								<div class="department-container">
 									<div>
 										<p><strong>Departamento</strong></p>
 									</div>
-									<div class="categoryContainerDP">
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+									<div class="category-container-dp">
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -219,8 +216,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -229,8 +226,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -242,15 +239,15 @@
 									</div>
 								</div>
 								<div>
-									<ul class="dropdownImg">
-										<div class="imgText imgText2">
+									<ul class="dropdown-img">
+										<div class="img-text img-text-2">
 											<p>
 												Confira os<br />Produtos<br />
 												<strong>Que<br />Acabaram<br />de chegar</strong>
 											</p>
 											<a href="#"><button>Ver todos</button></a>
 										</div>
-										<div class="bg2"></div>
+										<div class="bg-2"></div>
 										<img src="images/caneca2.png" alt="Caneca preta personalizada com o logo da Avanti em uma cozinha" />
 									</ul>
 								</div>				
@@ -259,15 +256,15 @@
 					</li>
 					<li class="dropdown">
 						<a href="#">Departamento</a>
-						<div class="dropdownContentDP">
-							<div class="dropdownContainer">
-								<div class="departmentContainer">
+						<div class="dropdown-content-dp">
+							<div class="dropdown-container">
+								<div class="department-container">
 									<div>
 										<p><strong>Departamento</strong></p>
 									</div>
-									<div class="categoryContainerDP">
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+									<div class="category-container-dp">
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -276,8 +273,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -286,8 +283,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -299,15 +296,15 @@
 									</div>
 								</div>
 								<div>
-									<ul class="dropdownImg">
-										<div class="imgText imgText2">
+									<ul class="dropdown-img">
+										<div class="img-text img-text-2">
 											<p>
 												Confira os<br />Produtos<br />
 												<strong>Que<br />Acabaram<br />de chegar</strong>
 											</p>
 											<a href="#"><button>Ver todos</button></a>
 										</div>
-										<div class="bg2"></div>
+										<div class="bg-2"></div>
 										<img src="images/caneca2.png" alt="Caneca preta personalizada com o logo da Avanti em uma cozinha" />
 									</ul>
 								</div>				
@@ -316,15 +313,15 @@
 					</li>
 					<li class="dropdown">
 						<a href="#">Departamento</a>
-						<div class="dropdownContentDP">
-							<div class="dropdownContainer">
-								<div class="departmentContainer">
+						<div class="dropdown-content-dp">
+							<div class="dropdown-container">
+								<div class="department-container">
 									<div>
 										<p><strong>Departamento</strong></p>
 									</div>
-									<div class="categoryContainerDP">
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+									<div class="category-container-dp">
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -333,8 +330,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -343,8 +340,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -356,15 +353,15 @@
 									</div>
 								</div>
 								<div>
-									<ul class="dropdownImg">
-										<div class="imgText imgText2">
+									<ul class="dropdown-img">
+										<div class="img-text img-text-2">
 											<p>
 												Confira os<br />Produtos<br />
 												<strong>Que<br />Acabaram<br />de chegar</strong>
 											</p>
 											<a href="#"><button>Ver todos</button></a>
 										</div>
-										<div class="bg2"></div>
+										<div class="bg-2"></div>
 										<img src="images/caneca2.png" alt="Caneca preta personalizada com o logo da Avanti em uma cozinha" />
 									</ul>
 								</div>				
@@ -373,15 +370,15 @@
 					</li>
 					<li class="dropdown">
 						<a href="#">Departamento</a>
-						<div class="dropdownContentDP">
-							<div class="dropdownContainer">
-								<div class="departmentContainer">
+						<div class="dropdown-content-dp">
+							<div class="dropdown-container">
+								<div class="department-container">
 									<div>
 										<p><strong>Departamento</strong></p>
 									</div>
-									<div class="categoryContainerDP">
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+									<div class="category-container-dp">
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -390,8 +387,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -400,8 +397,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -413,15 +410,15 @@
 									</div>
 								</div>
 								<div>
-									<ul class="dropdownImg">
-										<div class="imgText imgText2">
+									<ul class="dropdown-img">
+										<div class="img-text img-text-2">
 											<p>
 												Confira os<br />Produtos<br />
 												<strong>Que<br />Acabaram<br />de chegar</strong>
 											</p>
 											<a href="#"><button>Ver todos</button></a>
 										</div>
-										<div class="bg2"></div>
+										<div class="bg-2"></div>
 										<img src="images/caneca2.png" alt="Caneca preta personalizada com o logo da Avanti em uma cozinha" />
 									</ul>
 								</div>				
@@ -430,15 +427,15 @@
 					</li>
 					<li class="dropdown">
 						<a href="#">Departamento</a>
-						<div class="dropdownContentDP">
-							<div class="dropdownContainer">
-								<div class="departmentContainer">
+						<div class="dropdown-content-dp">
+							<div class="dropdown-container">
+								<div class="department-container">
 									<div>
 										<p><strong>Departamento</strong></p>
 									</div>
-									<div class="categoryContainerDP">
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+									<div class="category-container-dp">
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -447,8 +444,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -457,8 +454,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -470,15 +467,15 @@
 									</div>
 								</div>
 								<div>
-									<ul class="dropdownImg">
-										<div class="imgText imgText2">
+									<ul class="dropdown-img">
+										<div class="img-text img-text-2">
 											<p>
 												Confira os<br />Produtos<br />
 												<strong>Que<br />Acabaram<br />de chegar</strong>
 											</p>
 											<a href="#"><button>Ver todos</button></a>
 										</div>
-										<div class="bg2"></div>
+										<div class="bg-2"></div>
 										<img src="images/caneca2.png" alt="Caneca preta personalizada com o logo da Avanti em uma cozinha" />
 									</ul>
 								</div>				
@@ -487,15 +484,15 @@
 					</li>
 					<li class="dropdown">
 						<a href="#">Departamento</a>
-						<div class="dropdownContentDP">
-							<div class="dropdownContainer">
-								<div class="departmentContainer">
+						<div class="dropdown-content-dp">
+							<div class="dropdown-container">
+								<div class="department-container">
 									<div>
 										<p><strong>Departamento</strong></p>
 									</div>
-									<div class="categoryContainerDP">
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+									<div class="category-container-dp">
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -504,8 +501,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -514,8 +511,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -527,15 +524,15 @@
 									</div>
 								</div>
 								<div>
-									<ul class="dropdownImg">
-										<div class="imgText imgText2">
+									<ul class="dropdown-img">
+										<div class="img-text img-text-2">
 											<p>
 												Confira os<br />Produtos<br />
 												<strong>Que<br />Acabaram<br />de chegar</strong>
 											</p>
 											<a href="#"><button>Ver todos</button></a>
 										</div>
-										<div class="bg2"></div>
+										<div class="bg-2"></div>
 										<img src="images/caneca2.png" alt="Caneca preta personalizada com o logo da Avanti em uma cozinha" />
 									</ul>
 								</div>				
@@ -544,15 +541,15 @@
 					</li>
 					<li class="dropdown">
 						<a href="#">Departamento</a>
-						<div class="dropdownContentDP">
-							<div class="dropdownContainer">
-								<div class="departmentContainer">
+						<div class="dropdown-content-dp">
+							<div class="dropdown-container">
+								<div class="department-container">
 									<div>
 										<p><strong>Departamento</strong></p>
 									</div>
-									<div class="categoryContainerDP">
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+									<div class="category-container-dp">
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -561,8 +558,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -571,8 +568,8 @@
 											<li>Categoria</li>
 											<li>Categoria</li>
 										</ul>
-										<ul class="categoryList">
-											<li class="categoryTitle">Categoria</li>
+										<ul class="category-list">
+											<li class="category-title">Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
 											<li>Categoria</li>
@@ -584,159 +581,159 @@
 									</div>
 								</div>
 								<div>
-									<ul class="dropdownImg">
-										<div class="imgText imgText2">
+									<ul class="dropdown-img">
+										<div class="img-text img-text-2">
 											<p>
 												Confira os<br />Produtos<br />
 												<strong>Que<br />Acabaram<br />de chegar</strong>
 											</p>
 											<a href="#"><button>Ver todos</button></a>
 										</div>
-										<div class="bg2"></div>
+										<div class="bg-2"></div>
 										<img src="images/caneca2.png" alt="Caneca preta personalizada com o logo da Avanti em uma cozinha" />
 									</ul>
 								</div>				
 							</div>
 						</div>
 					</li>
-
-
-
-						
 				</ul>
 			</nav>
         </header>
+		<!-- HEADER'S END -->
 
+
+		<!-- CONTENT -->
         <main>
-			<section>
-				<div id="searchResult"></div>
-			</section>
+			
+			<section id="search-result"></section>
+
 			<section class="featured">
-				<div>
-					<img src="images/hero.png" alt="Imagem de destaque do site onde está escrito: supersale, itens selecionados com até 50% off" />
-				</div>
+				<img src="images/hero.png" alt="Imagem de destaque do site onde está escrito: supersale, itens selecionados com até 50% off" />
 			</section>
 
 			<section>
 				<div class="release">
-					<div>
-						<h2>Lançamentos</h2>
-					</div>
-					<div>
-						<a href="#">Ver mais</a>
-					</div>
+					<h2>Lançamentos</h2>
+					<a href="#">Ver mais</a>
 				</div>
+
 				<div class="swiper">
 					<div class="swiper-wrapper">
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
 					</div>
+
 					<div class="swiper-pagination"></div>
 					<div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div>
 				</div>
 			</section>
 
-
-			<section class="textContent">
-				<div>
-					<img src="images/caneca1.png" alt="Caneca preta personalizada com o logo da Avanti" />
-				</div>
-				<div class="text1">
+			<section class="text-content">
+				<img src="images/caneca1.png" alt="Caneca preta personalizada com o logo da Avanti" />
+				<div class="text-1">
 					<h1>Lorem ipsum</h1>
 					<p>
 						Vestibulum tempor justo elementum condimentum lacinia. Donec at nisi non mi porta dictum eget sit amet est. Mauris mollis tincidunt ex, vitae efficitur ex semper vitae. Nam accumsan lobortis dui in scelerisque. Ut in velit at ex lacinia aliquam. Cras aliquam pulvinar libero sed ullamcorper. Nam ante nunc, ultricies vitae erat ut, vehicula aliquam dui. Sed semper malesuada risus eget euismod. Cras eget ultrices magna. Quisque sagittis ut felis vel sagittis. In sed quam dapibus, dignissim turpis rhoncus, posuere leo.
@@ -747,9 +744,9 @@
 				</div>
 			</section>
 
-			<section class="textContent2">
-				<div class="textContent">
-					<div class="text2">
+			<section class="text-content-2">
+				<div class="text-content">
+					<div class="text-2">
 						<h1>Lorem ipsum</h1>
 						<div class="block">
 							<img src="images/location.png" alt="ícone de localização" />
@@ -770,17 +767,15 @@
 							</p>
 						</div>
 					</div>
-					<div>
 						<img src="images/caneca2.png" alt="Caneca preta personalizada com o logo da Avanti em uma cozinha" />
-					</div>
 				</div>
 			</section>
 
-			<section class="textContent">
+			<section class="text-content">
 				<div>
 					<img src="images/caneca1.png" alt="Caneca preta personalizada com o logo da Avanti" />
 				</div>
-				<div class="text1">
+				<div class="text-1">
 					<h1>Lorem ipsum</h1>
 					<p>
 						Vestibulum tempor justo elementum condimentum lacinia. Donec at nisi non mi porta dictum eget sit amet est. Mauris mollis tincidunt ex, vitae efficitur ex semper vitae. Nam accumsan lobortis dui in scelerisque. Ut in velit at ex lacinia aliquam. Cras aliquam pulvinar libero sed ullamcorper. Nam ante nunc, ultricies vitae erat ut, vehicula aliquam dui. Sed semper malesuada risus eget euismod. Cras eget ultrices magna. Quisque sagittis ut felis vel sagittis. In sed quam dapibus, dignissim turpis rhoncus, posuere leo.
@@ -793,112 +788,118 @@
 			
 			<section>
 				<div class="release">
-					<div>
-						<h2>Lançamentos</h2>
-					</div>
-					<div>
-						<a href="#">Ver mais</a>
-					</div>
+					<h2>Lançamentos</h2>
+					<a href="#">Ver mais</a>
 				</div>
+
 				<div class="swiper">
 					<div class="swiper-wrapper">
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
+
 						<article class="swiper-slide">
-							<div class="imgProduct">
-								<span class="newProduct">Novo</span>
+							<div class="img-product">
+								<span class="new-product">Novo</span>
 								<img src="images/product.png" alt="imagem do produto">
 							</div>
 							<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-							<a href="#" target="_blank"><p class="discountCard">10% off</p></a>
-							<p class="priceInfo">R$100,00</p>
+							<a href="#" target="_blank"><p class="discount-card">10% off</p></a>
+							<p class="price-info">R$100,00</p>
 							<p class="price">R$79,90</p>
-							<p class="paymentInfo">Ou em até 10x de R$ 7,90</p>
+							<p class="payment-info">Ou em até 10x de R$ 7,90</p>
 							<a href="#"><button>Comprar</button></a>
 						</article>
 					</div>
+
 					<div class="swiper-pagination"></div>
 					<div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div>
@@ -915,34 +916,37 @@
 			<section class="newsletter">
 				<h2>Cadastre-se na nossa <span>newsletter</span></h2>
 
-				<form action="" method="post" class="newsletterContainer">
-					<div class="newsletterItem">
-						<input type="text" name="clientName" id="clientName" aria-label="Digite seu e-mail" placeholder="Digite seu nome">
+				<form action="" method="post" class="newsletter-container">
+					<div class="newsletter-item">
+						<input type="text" name="client-name" id="client-name" aria-label="Digite seu e-mail" placeholder="Digite seu nome">
 					</div>
-
-					<div class="newsletterItem">
-						<input type="email" name="clientEmail" id="clientEmail" aria-label="Digite seu e-mail" placeholder="Digite seu e-mail">
+					<div class="newsletter-item">
+						<input type="email" name="client-email" id="client-email" aria-label="Digite seu e-mail" placeholder="Digite seu e-mail">
 					</div>
-					<div class="newsletterItem">
-						<input type="checkbox" name="privacyCheck" id="privacyCheck" value="1" required>
-						<label for="privacyCheck" class="privacyCheck">Estou de acordo com a <a href="#">Política de Privacidade</a></label>
+					<div class="newsletter-item">
+						<input type="checkbox" name="privacy-check" id="privacy-check" value="1" required>
+						<label for="privacy-check" class="privacy-check">Estou de acordo com a <a href="#">Política de Privacidade</a></label>
 					</div>
-					<div class="newsletterItem newsletterButton">
-						<button class="subscribe">
+					<div class="newsletter-item newsletter-button">
+						<button>
 							<input type="submit" name="submit" aria-label="Botão para se cadastrar" value="Cadastrar">
 						</button>
 					</div>
 				</form>
 			</section>
-		</main>
 
+		</main>
+		<!-- CONTENT'S END -->
+
+
+		<!-- FOOTER -->
         <footer>
-			<section class="aboutSection">
-				<div class="socialMedias">
-					<div class="avantiSocial">
+			<section class="about-section">
+				<div class="social-medias">
+					<div class="avanti-social">
 						<img src="images/header/avantiBlue.png" alt="logo da Avanti"/>
 					</div>
-					<div class="socialIcons">
+					<div class="social-icons">
 						<a href="#" target="_blank">
 							<img src="images/social/instagram.png" alt="Instagram" />
 						</a>
@@ -957,15 +961,15 @@
 						</a>
 					</div>
 				</div>
-				<div class="contactLinks">
-					<div class="contactColumn">
+				<div class="contact-links">
+					<div class="contact-column">
 						<h4>Institucional</h4>
 						<h5><a href="#">Sobre Nós</a></h5>
 						<h5><a href="#">Nossas Lojas</a></h5>
 						<h5><a href="#">Privacidade e Segurança</a></h5>
 						<h5><a href="#">Termos e Condições</a></h5>
 					</div>
-					<div class="contactColumn">
+					<div class="contact-column">
 						<h4>Central de ajuda</h4>
 						<h5><a href="#">Fale Conosco</a></h5>
 						<h5><a href="#">Frete e Entrega</a></h5>
@@ -973,7 +977,7 @@
 						<h5><a href="#">Formas de Pagamento</a></h5>
 						<h5><a href="#">FAQ</a></h5>
 					</div>
-					<div class="contactColumn">
+					<div class="contact-column">
 						<h4>Atendimento</h4>
 						<h5><strong>Telefone</strong>: (00) 1234-5678</a></h5>
 						<h5><strong>E-mail:</strong> <a href="mailto:exemplo@exemplo.com">exemplo@exemplo.com</a></h5>
@@ -984,7 +988,7 @@
 						</h5>
 					</div>
 				</div>
-				<div class="paymentMethods">
+				<div class="payment-methods">
 					<img src="images/creditCards/amex.png" alt="Amex" />
 					<img src="images/creditCards/master.png" alt="Mastercard" />
 					<img src="images/creditCards/visa.png" alt="Visa" />
@@ -997,11 +1001,11 @@
 				</div>
 			</section>
 
-			<section class="footerInfo">
-				<p class="footerText">
+			<section class="footer-info">
+				<p class="footer-text">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste deleniti cupiditate earum nihil tempora ab aliquam voluptas reiciendis? Excepturi ipsum vel maiores nostrum, doloremque blanditiis adipisci ad est velit id, corrupti deleniti illo placeat. Deserunt doloremque repudiandae soluta tempora molestias.
 				</p>
-				<div class="footerIcons">
+				<div class="footer-icons">
 					<img src="images/footer/letsEncrypt.png" alt="Let's Encrypt" />
 					<img src="images/footer/vtex-pci-200.png" alt="Certificado Vtex PCI certified" />
 					<img src="images/footer/avantiblack.png" alt="Avanti" />

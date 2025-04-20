@@ -1,6 +1,6 @@
 const inputForm = document.querySelector("#search");
-const searchButton = document.querySelector("#searchButton");
-const searchResult = document.querySelector("#searchResult");
+const searchButton = document.querySelector("#search-button");
+const searchResult = document.querySelector("#search-result");
 
 function showSearchResults() {
     const searchTerm = inputForm.value.trim();
