@@ -24,7 +24,6 @@ button {border: none;}
 button:hover {cursor: pointer;}
 
 
-
 /* --- header --- */
 
 header {
@@ -38,7 +37,7 @@ header {
 .cupom-desconto {
 	display: block;
 	color: #fff;
-	background-color: #1c8adb;
+	background-color: #005cff;
 	font-size: 0.8em;
 	font-weight: bold;
 	padding: 5px;
@@ -47,7 +46,7 @@ header {
 }
 
 .cupom-desconto span {
-	background-color: blueviolet;
+	background-color: #093a91;
 }
 
 .header-container {
@@ -68,39 +67,51 @@ header {
 
 #form-search {
 	display: flex;
+	position: relative;
 }
 
 #search {
-	width: 400px;
-	height: 30px;
+	width: 594px;
+	height: 38px;
 	border: 2px solid #dedede;
-	border-radius: 30px;
+	border-radius: 10px;
 	padding-left: 10px;
 }
 
 #search:hover {
-	background-color: rgba(189, 186, 255, 0.3);
-	border-radius: 30px;
-	box-shadow: 0 0 3px blueviolet;
+	background-color: #d9f3ff;
+	border-radius: 10px;
+	border: 1px solid #005cff;
+	box-shadow: 0 0 5px #093a91;
+	transition-duration: 8ms;
+}
+
+#search:focus {
+	background-color: #d9f3ff;
+	box-shadow: 0 0 5px #093a91;
 	transition-duration: 8ms;
 }
 
 #search-button {
-	margin-left: 5px;
-	background-color: #fff;;
+	background-color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 9px;
+	right: 9px;
 }
 
-#search-button img:hover {
-	border-radius: 30px;
-	box-shadow: 0 0 3px blueviolet;
+#search-button:hover path {
+	fill: #005cff;
+	transition-duration: 8ms;
 }
 
-.user-name {
+.user-cart-container {
 	display: flex;
 	padding: 0 10px;
+	height: 24px;
+	font-size: 0.85em;
 }
 
-.user-name p {
+.user-cart-container p {
 	padding-left: 10px;
 	padding-right: 30px;
 	font-size: 0.85em;
@@ -115,15 +126,15 @@ header {
 
 #cart-button img:hover {
 	border-radius: 30px;;
-	box-shadow: 0 0 3px blueviolet;
+	box-shadow: 0 0 3px #093a91;
 }
 
 .cart-count {
 	position: absolute;
-	right: -15%;
-	top: -15%;
+	right: -30%;
+	top: -30%;
 	font-size: 0.75em;
-	background-color: crimson;
+	background-color: #005cff;
 	color: #fff;
 	padding: 2px 6px;
 	border-radius: 50px;
@@ -154,7 +165,26 @@ nav li {
 
 .main-link:hover {
 	letter-spacing: normal;
-	color: #1c8adb;
+	color: #005cff;
+}
+
+.main-link:hover svg line {
+	stroke: #005cff;
+	transition-duration: 0.3s;
+}
+
+.main-link svg {
+	height: 13px;
+}
+
+.main-link svg:hover line {
+	stroke: #005cff;
+	transition-duration: 0.3s;
+}
+
+.main-link svg:hover + .main-link-text {
+	color: #005cff;
+	transition-duration: 0.3s;
 }
 
 nav a {
@@ -167,7 +197,7 @@ nav a {
 }
 
 nav a:hover {
-	color: #1c8adb;
+	color: #005cff;
 	font-weight: bold;
 	letter-spacing: -0.4px;
 }
@@ -245,7 +275,7 @@ nav a:hover {
 
 .category-title {
 	font-weight: bold;
-	color: #1c8adb;
+	color: #005cff;
 	padding-bottom: 8px;
 }
 
@@ -485,20 +515,26 @@ h5 {
 
 @media (max-width: 768px) {
 
-	
 	.dropdown-dp {
 		display: none;
 	}
 
 	nav ul {
 		justify-content: center;
-		width: 50%;
 	}
 
 	nav a {
 		font-weight: bold;
 	}
 
+	.main-link-text {
+		display: none;
+	}
+	
+	.user-name {
+		display: none;
+	}
+	
 	.category-container, ul .dropdown-img {
 		display: none;
 	}
