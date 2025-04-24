@@ -25,22 +25,13 @@ categoryContainer.addEventListener("mouseout", (e) => {
 const dropdown = document.querySelector(".dropdown");
 const dropdownContent = document.querySelector(".dropdown-content");
 
-if (window.innerWidth > 768) {
-    dropdown.addEventListener("mouseover", (e) => {
-        dropdownContent.style.display = "block";
-    })
-    dropdown.addEventListener("mouseout", (e) => {
-        dropdownContent.style.display = "none";
-    });
-}
-
 if (window.innerWidth <= 768) {
-    dropdown.addEventListener("click", (e) => {
-        if (dropdownContent.style.display === "none") {
-            dropdownContent.style.display = "block";
+    dropdown.addEventListener("touchstart", (e) => {
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
         }
         else {
-            dropdownContent.style.display = "none";
+            dropdownContent.style.display = "block";
         }
     });
 }

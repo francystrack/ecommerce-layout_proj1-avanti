@@ -250,6 +250,8 @@ nav a:hover {
 	height: auto;
 }
 
+.dropdown:hover .dropdown-content {display:block}
+
 .drp-dp, .drp-dp-1 {
 	display: inherit;
 	flex-flow: row;
@@ -390,9 +392,6 @@ nav a:hover {
 	margin: 20px;
 	border-radius: 10px;
 }
-
-.dropdown:hover .dropdown-content-dp {display: block;}
-
 
 
 /* --- footer --- */
@@ -683,5 +682,15 @@ h5 {
 	
 	.footer-text {
 		margin-inline: 0;
+	}
+}
+
+@media (pointer: coarse) {
+	.dropdown:hover {
+	  all: revert-layer;
+	}
+
+	.h4:hover {
+	  all: revert-layer;
 	}
 }
