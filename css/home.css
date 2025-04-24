@@ -538,6 +538,7 @@ h1 {
 		width: 90%;
 		display: inherit;
 		justify-content: center;
+		column-gap: 5px;
 	}
 
 	#client-name, #client-email {
