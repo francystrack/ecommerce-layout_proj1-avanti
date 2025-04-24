@@ -40,13 +40,20 @@ header {
 	background-color: #005cff;
 	font-size: 0.8em;
 	font-weight: bold;
-	padding: 5px;
+	padding: 8px;
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-.cupom-desconto span {
-	background-color: #093a91;
+.cupom-bg {
+	background-color: blueviolet;
+	padding: 0 4px;
+	border-radius: 5px;
+}
+
+.italic {
+	font-weight: normal;
+	font-style: italic;
 }
 
 .header-container {
@@ -170,7 +177,7 @@ nav li {
 
 .main-link:hover svg line {
 	stroke: #005cff;
-	transition-duration: 0.3s;
+	transition-duration: 8ms;
 }
 
 .main-link svg {
@@ -179,21 +186,21 @@ nav li {
 
 .main-link svg:hover line {
 	stroke: #005cff;
-	transition-duration: 0.3s;
+	transition-duration: 8ms;
 }
 
 .main-link svg:hover + .main-link-text {
 	color: #005cff;
-	transition-duration: 0.3s;
+	transition-duration: 8ms;
 }
 
 nav a {
 	display: block;
 	color: #222;
 	text-align: center;
-	padding: 10px;
+	padding: 14px 10px;
 	transition-property: color;
-	transition-duration: 0.3s;
+	transition-duration: 8ms;
 }
 
 nav a:hover {
@@ -252,7 +259,7 @@ nav a:hover {
 	font-size: 0.95em;
 	text-decoration: none;
 	width: 200px;
-	transition-duration: 0.3s;
+	transition-duration: 8ms;
 }
 
 .drp-dp:hover, .drp-dp-1:hover {background-color: #ddd;}
@@ -286,7 +293,7 @@ nav a:hover {
 .dropdown-img img {
 	position: relative;
 	width: 240px;
-	height: 80%;
+	height: 75%;
 	margin: 20px;
 	border-radius: 10px;
 	mask-image: linear-gradient(to right, black 40%, transparent);
@@ -297,7 +304,7 @@ nav a:hover {
 	display: flex;
 	flex-flow: column;
 	position: absolute;
-	top: 65px;
+	top: 55px;
 	left: 55px;
 	z-index: 1;
 }
@@ -328,7 +335,7 @@ nav a:hover {
 	background-color: rgba(255, 255, 255,0.5);
 	box-shadow: 0 0 5px rgba(22,22,22,0.8);;
 	border: 1px solid rgba(22,22,22,1);
-	transition-duration: 0.5s;
+	transition-duration: 8ms;
 }
 
 	/* evita o padding setado no a lá de cima */
@@ -341,7 +348,7 @@ nav a:hover {
 	background-color: #222;
 	top: 0;
 	width: 240px;
-	height: 80%;
+	height: 75%;
 	margin: 20px;
 	border-radius: 10px;
 }
@@ -356,6 +363,7 @@ nav a:hover {
 	justify-content: start;
 	margin-top: 20px;;
 	margin-left: 30px;
+	padding-bottom: 10px;
 	width: 60%;
 }
 
@@ -380,7 +388,7 @@ nav a:hover {
 	background-color: #222;
 	top: 0;
 	width: 240px;
-	height: 87%;
+	height: 85%;
 	margin: 20px;
 	border-radius: 10px;
 }
@@ -407,24 +415,27 @@ nav a:hover {
 }
 
 .about-section a:hover {
-	color: #12588b;
+	color: #093a91;
 }
 
 .social-medias {
 	display: inherit;
 	flex-flow: column;
+	align-items: start;
+	row-gap: 40px;
 }
 
-.avanti-social img {
-	filter: grayscale(1);
-	width: 140px;
-	height: auto;
-	margin: 15px;
+.social-medias img {
+	height: 30px;
+	width: auto;
+	object-fit: none;
 }
 
 .social-icons {
 	display: inherit;
 	justify-content: space-between;
+	align-items: center;
+	column-gap: 42px;
 }
 
 .social-icons img {
@@ -455,6 +466,10 @@ h4 {
 	margin-bottom: 20px;
 }
 
+.svg-mobile {
+	display: none;
+}
+
 h5 {
 	font-size: 0.8em;
 	font-weight: normal;
@@ -464,12 +479,14 @@ h5 {
 .payment-methods {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
+	column-gap: 20px;
 }
 
 .payment-methods img {
 	width: 25px;
 	height: auto;
-	margin: 25px 10px 0;
+	margin-top: 25px;
 }
 
 .footer-info {
@@ -495,14 +512,17 @@ h5 {
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1284px) {
 
 	.header-container {
-		width: 80%;
+		width: 100%;
 		justify-content: center;
 		row-gap: 10px;
 		column-gap: 60px;
 	}
+}
+
+@media (max-width: 1100px) {
 
 	#search {
 		width: 300px;
@@ -519,8 +539,30 @@ h5 {
 		display: none;
 	}
 
-	nav ul {
-		justify-content: center;
+	.cupom-desconto {
+		height: 50px;
+	}
+
+	#cart-button {
+		position: absolute;
+		top: 70px;
+		right: 25px;
+	}
+
+	#cart-button svg {
+		width: 33px;
+		height: 30px;
+	}
+
+	.user-cart-container {
+		height: 10px;
+	}
+
+	nav {
+		position: absolute;
+		top: 50px;
+		left: 10px;
+		height: 30px;
 	}
 
 	nav a {
@@ -529,6 +571,28 @@ h5 {
 
 	.main-link-text {
 		display: none;
+	}
+
+	.main-link svg {
+		width: 29px;
+		height: 30px;
+	}
+	
+	.header-container {
+		flex-flow: column;
+		row-gap: 10px;
+	}
+	
+	.header-container img {
+		margin-bottom: 20px;
+	}
+
+	#form-search {
+		width: 90%;
+	}
+
+	#search {
+		width: 100%;
 	}
 	
 	.user-name {
@@ -540,11 +604,85 @@ h5 {
 	}
 
 	.dropdown-content {
-		left: auto;
-		max-width: min-content;
+		left: -20px;
 		background-color: #ddd;
 	}
 
+	.dropdown-container {
+		flex: 0 0 auto;
+	}
+
+	.drp-links span {
+		display: none;
+	}
+
+	/*	footer	*/
+	.about-section {
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 20px;
+		width: 100%;
+		padding: 60px 0;
+	}
+
+	.social-medias {
+		align-items: center;
+		margin-bottom: 40px;
+	}
+
+	.contact-links {
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.contact-column {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	h4:hover {
+		background-color: #ddd;
+	}
+
+	.h4-1, .h4-2, .h4-3 {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		font-size: 1em;
+		padding: 15px 5%;
+		margin: 0;
+		border-top: 1px solid #dedede;
+		border-bottom: 1px solid #dedede;
+		position: relative;
+	}
+
+	.svg-mobile {
+		display: block;
+	}
+
+	.h5-container1, .h5-container2, .h5-container3 {
+		display: none;
+	}
+	
+	.h5-container1 h5, .h5-container2 h5, .h5-container3 h5 {
+		margin-top: 10px;
+		margin-left: 8%;
+		font-size: 0.9em;
+	}
+	
+	.payment-methods {
+		margin-top: 10px;
+		margin-inline: 15%;
+	}
+	
+	.footer-info {
+		padding-inline: 5%;
+	}
+	
 	.footer-text {
 		margin-inline: 0;
 	}
