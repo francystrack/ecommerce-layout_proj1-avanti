@@ -353,8 +353,6 @@ nav a:hover {
 	border-radius: 10px;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
-
 .dropdown-dp:hover .dropdown-content-dp {display: block;}
 
 .department-container {

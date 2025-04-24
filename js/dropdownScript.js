@@ -17,3 +17,30 @@ categoryContainer.addEventListener("mouseover", (e) => {
 categoryContainer.addEventListener("mouseout", (e) => {
     categoryContainer.style.visibility = "hidden";
 });
+
+
+
+//tratamento do dropdown "todas as categorias"
+
+const dropdown = document.querySelector(".dropdown");
+const dropdownContent = document.querySelector(".dropdown-content");
+
+if (window.innerWidth > 768) {
+    dropdown.addEventListener("mouseover", (e) => {
+        dropdownContent.style.display = "block";
+    })
+    dropdown.addEventListener("mouseout", (e) => {
+        dropdownContent.style.display = "none";
+    });
+}
+
+if (window.innerWidth <= 768) {
+    dropdown.addEventListener("click", (e) => {
+        if (dropdownContent.style.display === "none") {
+            dropdownContent.style.display = "block";
+        }
+        else {
+            dropdownContent.style.display = "none";
+        }
+    });
+}
