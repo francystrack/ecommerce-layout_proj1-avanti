@@ -532,6 +532,7 @@ h5 {
 
 @media (max-width: 768px) {
 
+	
 	.dropdown-dp {
 		display: none;
 	}
@@ -542,7 +543,7 @@ h5 {
 
 	#cart-button {
 		position: absolute;
-		top: 70px;
+		top: 75px;
 		right: 25px;
 	}
 
@@ -557,9 +558,8 @@ h5 {
 
 	nav {
 		position: absolute;
-		top: 50px;
+		top: 60px;
 		left: 10px;
-		height: 30px;
 	}
 
 	nav a {
