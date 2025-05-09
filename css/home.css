@@ -41,7 +41,7 @@
 	margin-left: -50px;
 }
 
-.mobileBreak {
+.mobile-break {
 	display: none;
 }
 
@@ -420,7 +420,7 @@ h1 {
 @media (max-width: 768px) {
 
 
-	.mobileBreak {
+	.mobile-break {
 		display: block;
 	}
 
